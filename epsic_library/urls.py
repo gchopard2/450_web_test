@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from library import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('catalog/', views.index, name='index'),
+    path('<int:pk>',views.book_info, name="info")
 ]
