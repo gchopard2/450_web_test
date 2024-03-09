@@ -20,6 +20,6 @@ from library import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('catalog/', views.index, name='index'),
+    path('', views.index, name='index'),
     path('<int:pk>',views.book_info, name="info")
 ]
