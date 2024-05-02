@@ -8,3 +8,12 @@ class Book(models.Model):
 
     def __str__(self):
         return f'{self.author} | {self.title}'
+
+class DVD(models.Model):
+    title = models.CharField(max_length=50)
+    duration = models.IntegerField()
+    pegi = models.IntegerField()
+    description = models.TextField()
+
+    def __str__(self):
+        return f'{self.title} | {self.duration}mn | {self.pegi} | {self.description}'
