@@ -12,7 +12,7 @@ class Book(models.Model):
 class DVD(models.Model):
     title = models.CharField(max_length=50)
     duration = models.IntegerField()
-    pegi = models.IntegerField()
+    pegi = models.CharField(max_length=10)
     description = models.TextField()
 
     def __str__(self):
