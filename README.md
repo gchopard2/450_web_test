@@ -1,3 +1,4 @@
+![Tests](https://github.com/gchopard2/450_web_test/actions/workflows/python-app.yml/badge.svg)
 # Librairie EPSIC
 
 Web app simple écrite avec Django pour le module 450.
